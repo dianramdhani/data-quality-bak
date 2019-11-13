@@ -1,4 +1,7 @@
-# Update angular.json
+# Dashforge
+
+## Update angular.json
+
 ```javascript
 ...
 "styles": [
@@ -20,4 +23,12 @@
 	"src/themes/dashforge/assets/js/dashforge.js"
 ]
 ...
+```
+
+## Add code on wrapper component
+
+```typescript
+ngAfterViewInit() {
+    require('../../src/themes/dashforge/assets/js/dashforge.aside.js');
+}
 ```
