@@ -1,6 +1,6 @@
 # Dashforge
 
-## Update angular.json
+> Update angular.json
 
 ```javascript
 ...
@@ -25,7 +25,7 @@
 ...
 ```
 
-## Add code on wrapper component
+> Add code on wrapper component
 
 ```typescript
 ngAfterViewInit() {
