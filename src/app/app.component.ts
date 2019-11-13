@@ -7,6 +7,6 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
-    require('../../src/assets/dashforge/assets/js/dashforge.aside.js');
+    require('../../src/themes/dashforge/assets/js/dashforge.aside.js');
   }
 }
