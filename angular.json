@@ -28,9 +28,22 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/dashforge/lib/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/dashforge/lib/ionicons/css/ionicons.min.css",
+              "src/assets/dashforge/assets/css/dashforge.css",
+              "src/assets/dashforge/assets/css/dashforge.dashboard.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/dashforge/lib/jquery/jquery.min.js",
+              "src/assets/dashforge/lib/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/dashforge/lib/feather-icons/feather.min.js",
+              "src/assets/dashforge/lib/perfect-scrollbar/perfect-scrollbar.min.js",
+              "src/assets/dashforge/lib/jquery.flot/jquery.flot.js",
+              "src/assets/dashforge/lib/jquery.flot/jquery.flot.stack.js",
+              "src/assets/dashforge/lib/jquery.flot/jquery.flot.resize.js",
+              "src/assets/dashforge/assets/js/dashforge.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +137,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "data-quality"
 }
