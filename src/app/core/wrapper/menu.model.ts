@@ -1,13 +1,26 @@
-export interface Menu {
-    type: Type,
+interface State { to: string, params: {} }
+
+interface SubMenu {
     label: string,
-    icon?: string,
-    state?: { to: string, params: {} },
+    state: State,
     active?: boolean
+}
+
+export class Menu {
+    constructor(args: {
+        type: Type,
+        label: string,
+        icon?: string,
+        state?: State,
+        subMenus?: SubMenu[],
+        active?: boolean
+    }) {
+        Object.assign(this, args);
+    }
 }
 
 export enum Type {
     TITLE,
     LINK,
-    HASSUBLINK
+    HASSUBMENUS
 }

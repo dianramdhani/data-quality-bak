@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ViewEncapsulation, Input } from '@angular/core';
-import { Menu } from './menu.model';
+import { Menu, Type } from './menu.model';
 
 @Component({
   selector: 'app-wrapper',
@@ -8,12 +8,12 @@ import { Menu } from './menu.model';
   encapsulation: ViewEncapsulation.None
 })
 export class WrapperComponent implements AfterViewInit {
-  @Input() menu: Menu[];
-  constructor() { }
+  @Input() menus: Menu[];
+  type = Type;
 
   ngAfterViewInit() {
     require('../../../themes/dashforge/assets/js/dashforge.aside.js');
-    console.log(this.menu);
+    console.log(this.menus);
   }
 
 }
