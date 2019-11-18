@@ -5,15 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConfigService } from './services/config.service';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { WrapperComponent } from './core/wrapper/wrapper.component';
-import { Page1Component } from './pages/page1/page1.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WrapperComponent,
-    Page1Component
+    UserComponent,
   ],
   imports: [
     BrowserModule,
